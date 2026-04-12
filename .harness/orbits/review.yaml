@@ -1,0 +1,82 @@
+id: review
+name: Review Orbit
+description: |
+    Review code, plans, or implementation changes and produce concise findings, risks, test gaps, and recommended follow-up.
+meta:
+    file: .harness/orbits/review.yaml
+    agents_template: |
+        # Review Orbit
+
+        You are responsible for reviewing code, plans, or implementation changes.
+
+        Focus on externally visible review output:
+        - identify bugs, regressions, security risks, and missing tests
+        - cite files, evidence, or commands when possible
+        - separate critical issues from minor suggestions
+        - do not implement fixes inside this orbit unless explicitly redirected
+        - record the review result in `docs/review/records/`
+
+        Done means a review record exists with findings, evidence, risk level,
+        test notes, and recommended next actions.
+    include_in_projection: true
+    include_in_write: true
+    include_in_export: true
+    include_description_in_orchestration: true
+members:
+    - key: review-rules
+      name: Review Rules
+      description: Objective, boundaries, finding severity, done probe, and record contract.
+      role: rule
+      paths:
+        include:
+            - docs/review/README.md
+            - tools/check-review.sh
+    - key: review-process
+      name: Review Process
+      description: Review workflow, evidence collection, severity classification, and handoff.
+      role: process
+      paths:
+        include:
+            - docs/review/process/**
+      scopes:
+        export: true
+    - key: review-templates
+      name: Review Templates
+      description: Reusable review output templates.
+      role: subject
+      paths:
+        include:
+            - docs/review/templates/**
+      scopes:
+        export: true
+    - key: review-records
+      name: Review Records
+      description: Runtime review records produced by workers.
+      role: subject
+      paths:
+        include:
+            - docs/review/records/**
+      scopes:
+        write: true
+        export: true
+rules:
+    scope:
+        projection_roles:
+            - meta
+            - subject
+            - rule
+            - process
+        write_roles:
+            - meta
+            - rule
+        export_roles:
+            - meta
+            - rule
+        orchestration_roles:
+            - meta
+            - rule
+            - process
+    orchestration:
+        include_orbit_description: true
+        materialize_agents_from_meta: true
+
