@@ -31,6 +31,10 @@ members:
         include:
             - docs/review/README.md
             - tools/check-review.sh
+      scopes:
+        write: true
+        export: true
+        orchestration: true
     - key: review-process
       name: Review Process
       description: Review workflow, evidence collection, severity classification, and handoff.
@@ -39,7 +43,9 @@ members:
         include:
             - docs/review/process/**
       scopes:
+        write: true
         export: true
+        orchestration: true
     - key: review-templates
       name: Review Templates
       description: Reusable review output templates.
@@ -68,10 +74,13 @@ rules:
             - process
         write_roles:
             - meta
+            - subject
             - rule
+            - process
         export_roles:
             - meta
             - rule
+            - process
         orchestration_roles:
             - meta
             - rule
