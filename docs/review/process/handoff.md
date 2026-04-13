@@ -1,4 +1,4 @@
-\# Handoff Process
+# Handoff Process
 
 
 
@@ -6,17 +6,17 @@ A review handoff should include:
 
 
 
-\- what was reviewed
+- what was reviewed
 
-\- what was not reviewed
+- what was not reviewed
 
-\- findings by severity
+- findings by severity
 
-\- tests or checks considered
+- tests or checks considered
 
-\- open questions
+- open questions
 
-\- recommended next action
+- recommended next action
 
 
 
