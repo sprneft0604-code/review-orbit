@@ -1,4 +1,4 @@
-\# Findings Process
+# Findings Process
 
 
 
@@ -10,15 +10,15 @@ Each finding should include:
 
 
 
-\- severity
+- severity
 
-\- location or evidence
+- location or evidence
 
-\- problem
+- problem
 
-\- user or system impact
+- user or system impact
 
-\- recommended fix or next action
+- recommended fix or next action
 
 
 

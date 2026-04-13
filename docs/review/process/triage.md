@@ -1,4 +1,4 @@
-\# Review Triage
+# Review Triage
 
 
 
@@ -6,15 +6,15 @@ Classify the review request into one or more lanes:
 
 
 
-\- `code\_diff`: review changed code or a pull request style diff
+- `code\_diff`: review changed code or a pull request style diff
 
-\- `plan\_review`: review an implementation plan or architecture proposal
+- `plan\_review`: review an implementation plan or architecture proposal
 
-\- `test\_review`: review test coverage and verification evidence
+- `test\_review`: review test coverage and verification evidence
 
-\- `risk\_review`: review security, reliability, migration, or rollback risk
+- `risk\_review`: review security, reliability, migration, or rollback risk
 
-\- `blocked`: target is missing, too broad, or outside this orbit
+- `blocked`: target is missing, too broad, or outside this orbit
 
 
 
