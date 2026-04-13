@@ -1,88 +1,47 @@
-\# Review: <Topic>
+# Review Record: <Topic>
 
+## Status
 
+<passed | findings | blocked | failure | abnormal_exit | external_stop>
 
-\## Review Target
-
-
+## Review Target
 
 <What was reviewed>
 
+## Scope
 
+<What was included and excluded>
 
-\## Scope
+## Evidence Inspected
 
+- <File, diff, command, log, test output, or document>
 
+## Findings
 
-<What is included and excluded>
+### Critical
 
+- None
 
+### Important
 
-\## Evidence Inspected
+- None
 
+### Minor
 
+- None
 
-\- <File, diff, command, log, or document>
+### Questions
 
+- None
 
+## Test Notes
 
-\## Findings
+<What tests/checks were inspected, run, missing, or still needed>
 
-
-
-\### Critical
-
-
-
-\- None
-
-
-
-\### Important
-
-
-
-\- None
-
-
-
-\### Minor
-
-
-
-\- None
-
-
-
-\### Questions
-
-
-
-\- None
-
-
-
-\## Test Notes
-
-
-
-<What tests/checks were inspected or still need to run>
-
-
-
-\## Residual Risk
-
-
+## Residual Risk
 
 <What uncertainty remains>
 
-
-
-\## Recommended Next Action
-
-
+## Recommended Next Action
 
 <What should happen next>
-
-
-

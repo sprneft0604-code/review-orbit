@@ -34,6 +34,10 @@ members:
       include:
         - docs/review/README.md
         - tools/check-review.sh
+    scopes:
+      write: true
+      export: true
+      orchestration: true
 
   - key: review-process
     name: Review Process
@@ -43,7 +47,11 @@ members:
       include:
         - docs/review/process/**
     scopes:
+      write: true
       export: true
+      orchestration: true
+
+
 
   - key: review-templates
     name: Review Templates
@@ -69,8 +77,8 @@ members:
 rules:
   scope:
     projection_roles: [meta, subject, rule, process]
-    write_roles: [meta, rule]
-    export_roles: [meta, rule]
+    write_roles: [meta, subject, rule, process]
+    export_roles: [meta, rule, process]
     orchestration_roles: [meta, rule, process]
   orchestration:
     include_orbit_description: true
